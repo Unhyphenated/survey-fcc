@@ -1,0 +1,84 @@
+<!-- A survey form -->
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Terabotics: Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </header>
+
+    <body id="main">
+        <div id="banner">
+            <h1 id="title">Terabotics</h1>
+            <h3 id="tagline">New Terabot, New You</h3>
+        </div>
+        
+        <div>
+        <p id="description"><i>Get your own adorable, potentially malevolent general assisting robot here.</i></p>
+        
+        <!--Details of user-->
+        <form id="survey-form" method="get">
+            <label id="name-label" for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" placeholder="John Smith" size="30" required><br><br>
+            <label id="email-label"for="email">E-Mail</label><br>
+            <input type="email" id="email" name="email" placeholder="johnsmith@johnsmith.com" size="30" required><br><br>
+            <label id="number-label"for="age">Age (Optional)</label><br>
+            <input type="number" for="number" id="number" name="age" min="18" max="130" placeholder="Input age" size="30" required><br><br>
+            <label for="size">Preferred size:</label><br>
+            
+            <!--Choose size of bot-->
+            <select name="size" id="dropdown">
+                <option value="Short">Short</option>
+                <option value="Tall">Tall</option>
+                <option value="Grande">Grande</option>
+                <option value="Venti">Venti</option>
+                <option value="Trenta">Trenta</option>
+            </select><br><br>
+
+            <!--Choose colour of bot-->
+            <label for="colour">Preferred colour:</label><br>
+            <input type="radio" id="red" name="colour" value="red">
+            <label for="red">Crimson Red</label><br>
+            <input type="radio" id="blue" name="colour" value="blue">
+            <label for="blue">Prussian Blue</label><br>
+            <input type="radio" id="green" name="colour" value="green">
+            <label for="red">Chartreuse Green</label><br>
+            <input type="radio" id="yellow" name="colour" value="yellow">
+            <label for="blue">Bumblebee Yellow</label><br>
+            <input type="radio" id="white" name="colour" value="white">
+            <label for="red">Ivory</label><br>
+            <input type="radio" id="black" name="colour" value="black">
+            <label for="blue">Matte Black</label><br><br>
+
+            <!--Choose functions-->
+            <label for="functions">What would you like your <i><strong>Terabot</strong></i> to do?</label><br>
+            <input type="checkbox" value="Laser Engraving">
+            <label for="laser">Laser Engraving</label><br>
+            <input type="checkbox" value="Washing Machine">
+            <label for="wash">Washing Machine</label><br>
+            <input type="checkbox" value="Calligrapher">
+            <label for="calligraphy">Calligrapher</label><br>
+            <input type="checkbox" value="Cartographer">
+            <label for="cartopgraphy">Cartographer</label><br>
+            <input type="checkbox" value="Wood Carving">
+            <label for="wood">Wood Carving</label><br>
+            <input type="checkbox" value="Electronics Maintenance">
+            <label for="electronics">Electronics Maintenance</label><br>
+            <input type="checkbox" value="Entertainment ">
+            <label for="entertainment">Entertainment </label><br>
+            <input type="checkbox" value="Roomba">
+            <label for="roomba">Roomba</label><br>
+            <input type="checkbox" value="Juice Dispenser">
+            <label for="juicer">Juice Dispenser</label><br>
+            <input type="checkbox" value="Accountant">
+            <label for="account">Accountant</label><br><br>
+
+            <!--Comment section-->
+            <label for="terareview">What would you like to see Terabots do in the future?</label><br>
+            
+            <textarea id="terareview" name="terareview" rows="10" cols="42" placeholder="I would like Terabots to take over the world for me..."></textarea><br>
+            
+            <input type="submit" id="submit" name="submit">
+        </form>
+        </div>
+    </body>
+</html>
